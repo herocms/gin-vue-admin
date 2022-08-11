@@ -5,7 +5,7 @@ COPY . .
 
 RUN yarn && yarn build
 
-FROM nginx:alpine
+FROM nginx:1.23.1-alpine
 LABEL MAINTAINER="SliverHorn@sliver_horn@qq.com"
 
 COPY .docker-compose/nginx/conf.d/my.conf /etc/nginx/conf.d/my.conf
