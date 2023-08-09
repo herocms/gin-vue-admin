@@ -10,7 +10,7 @@ RUN go env -w GO111MODULE=on \
     && go mod tidy \
     && go build -o server .
 
-FROM alpine:latest
+FROM alpine:3.18.3
 
 LABEL MAINTAINER="SliverHorn@sliver_horn@qq.com"
 
